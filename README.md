@@ -69,7 +69,7 @@ sudo nano /efi/loader/loader.conf
 Then change the content of the loader to include the kernel name as default  
 
 ```
-default c30b2a672ecc434db2472939bd6a0b66*zen1-1-zen.conf
+default *zen.conf
 timeout 5
 console-mode auto
 reboot-for-bitlocker 1
