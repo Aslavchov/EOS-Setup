@@ -83,3 +83,20 @@ uname -r
 
 <br>
 <br>
+
+## Wallpapers
+<https://www.pexels.com/photo/mountain-peaks-during-night-time-3389618/> 
+<br>
+
+<br>
+<br>
+
+## Gnome Extensions
+Here's a list of the best extensions
+<br>
+First install the extension manager from Aur
+<br>
+
+```
+yay -S extension-manager
+```
