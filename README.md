@@ -11,6 +11,9 @@ yay -S Brave Bin
 ```
 <br>
 Steam
+```
+yay -S Steam
+```
 <br>
 Test
 <br>
