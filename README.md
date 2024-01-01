@@ -102,7 +102,6 @@ First install the extension manager from Aur
 yay -S extension-manager
 ```
 <br>
-<br>
 
 Now install the following extensions:
 <br>
