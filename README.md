@@ -18,7 +18,10 @@ Discord
 ```
 yay -S discord
 ```
+
 <br>
+<br>
+
 ## Installing Nvidia Drivers
 <https://discovery.endeavouros.com/nvidia/new-nvidia-driver-installer-nvidia-inst/2022/03/>  
 <br>
