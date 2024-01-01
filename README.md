@@ -9,11 +9,7 @@ Brave Browser
 ```
 yay -S Brave Bin
 ```
-<br>
-<br>
-```
-yay -S Steam
-```
+
 ## Installing Nvidia Drivers
 <https://discovery.endeavouros.com/nvidia/new-nvidia-driver-installer-nvidia-inst/2022/03/>  
 <br>
