@@ -2,6 +2,23 @@
 All setup CLI to configure EOS
 <br>
 <br>
+Here are some of the main apps I use:
+<br>
+Brave Browser
+```
+yay -S Brave Bin
+```
+<br>
+Steam
+```
+yay -S steam
+```
+<br>
+Discord
+```
+yay -S discord
+```
+
 ## Installing Nvidia Drivers
 <https://discovery.endeavouros.com/nvidia/new-nvidia-driver-installer-nvidia-inst/2022/03/>  
 <br>
