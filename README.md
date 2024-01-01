@@ -7,7 +7,7 @@ Here are some of the main apps I use:
 <br>
 Brave Browser
 ```
-yay -S Brave Bin
+yay -S brave-bin
 ```
 Steam
 ```
