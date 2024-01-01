@@ -9,14 +9,10 @@ Brave Browser
 ```
 yay -S Brave Bin
 ```
-<br>
 Steam
-
 ```
 yay -S steam
 ```
-
-<br>
 Discord
 
 ```
