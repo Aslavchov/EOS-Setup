@@ -4,20 +4,12 @@ All setup CLI to configure EOS
 <br>
 Here are some of the main apps I use:
 <br>
+<br>
 Brave Browser
 ```
 yay -S Brave Bin
 ```
 <br>
-Steam
-```
-yay -S steam
-```
-<br>
-Discord
-```
-yay -S discord
-```
 <br>
 
 ## Installing Nvidia Drivers
