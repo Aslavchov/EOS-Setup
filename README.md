@@ -106,8 +106,10 @@ yay -S extension-manager
 
 Now install the following extensions:
 <br>
-<br>
 Dash to Dock
+<br>
 Blur My Shell
+<br>
 Desktop Cube
+<br>
 Coverflow Alt-Tab
