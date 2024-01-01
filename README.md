@@ -94,9 +94,20 @@ uname -r
 ## Gnome Extensions
 Here's a list of the best extensions
 <br>
+<br>
 First install the extension manager from Aur
 <br>
 
 ```
 yay -S extension-manager
 ```
+<br>
+<br>
+
+Now install the following extensions:
+<br>
+<br>
+Dash to Dock
+Blur My Shell
+Desktop Cube
+Coverflow Alt-Tab
