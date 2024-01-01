@@ -13,11 +13,15 @@ yay -S Brave Bin
 Steam
 
 ```
-yay -S Steam
+yay -S steam
 ```
 
 <br>
-Test
+Discord
+
+```
+yay -S discord
+```
 <br>
 ## Installing Nvidia Drivers
 <https://discovery.endeavouros.com/nvidia/new-nvidia-driver-installer-nvidia-inst/2022/03/>  
