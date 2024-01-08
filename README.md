@@ -1,23 +1,7 @@
 # EOS-Setup
-All setup CLI to configure EOS
+A list of all the configuration changes I do to make the perfect gaming/work setup.
 <br>
 <br>
-Here are some of the main apps I use:
-<br>
-<br>
-Brave Browser
-```
-yay -S brave-bin
-```
-Steam
-```
-yay -S steam
-```
-Discord
-
-```
-yay -S discord
-```
 
 <br>
 <br>
@@ -132,3 +116,7 @@ Blur My Shell
 Desktop Cube
 <br>
 Coverflow Alt-Tab
+<br>
+AppIndicator and KStatusNotifierItem Support
+<br>
+gSnap
