@@ -112,7 +112,7 @@ yay -S protonup-qt
 
 First update your repositories
 ```
-packman -Syy
+packman -Syu
 ```
 These two cli's will install the gamemode libraries from Feral Interactive
 ```
