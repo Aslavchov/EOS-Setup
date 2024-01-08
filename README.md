@@ -1,23 +1,28 @@
 # EOS-Setup
-A list of all the configuration changes I do to make the perfect gaming/work setup.
+
+A list of all the configuration changes I do to make the perfect gaming/work setup for EndeavourOS.
+
 <br>
-<br>
+
+![ScreenShot](Desktop.png)
 
 <br>
 <br>
 
-## Installing Nvidia Drivers
+# Drivers
+
+### Official Nvidia Drivers
 <https://discovery.endeavouros.com/nvidia/new-nvidia-driver-installer-nvidia-inst/2022/03/>  
 <br>
-This CLI will automatically install Nvidia drivers for your EOS installation
+This CLI will automatically install the latest Nvidia drivers for your EOS installation.
 
 ```
 nvidia-inst
 ```  
-<br>
+
 <br>
 
-## Installing envycontrol  
+### Installing envycontrol  
 <https://discovery.endeavouros.com/hardware/envy-control/2023/03/>  
 <br>
 This CLI will install envycontrol which allows you to configure Nvidia optimus profiles  
@@ -36,18 +41,18 @@ The current mode options are `integrated`, `hybrid`, `nvidia`
 <br>
 <br>
 <br>
-## Download Gnome Software GUI package manager  
-This CLI will install the Gnome Software App
-```
-sudo pacman -Syu gnome-software-packagekit-plugin gnome-software
-```
-<br>
+
+
+# Flatpak
+### Link to Flathub
+<https://flathub.org/en>
+
 <br>
 
-## Install Flatpak support
+### Install Flatpak support
 <https://flatpak.org/setup/EndeavourOS>  
 <br>
-This CLI will install flatpak  
+This CLI will install flatpak
 
 ```
 sudo pacman -S flatpak
@@ -57,12 +62,90 @@ Then we need to add Flathub repository
 
 ```
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-```  
+```
+
+Finally we can update all Flatpaks using the following:
+
+```
+flatpak update
+```
 
 <br>
 <br>
+<br>
 
-## Configure Zen Kernel as default  
+# Gaming Setup
+### Installing Steam
+The following CLI installs Steam
+```
+yay -S Steam
+```
+<br>
+
+### Installing Mangohud for Performance Monitoring
+This step will require you to install from the Aur repo as opposed to the official repo as it is borked on EOS
+<https://github.com/flightlessmango/MangoHud>
+
+```
+yay -S mangohud-git
+```
+```
+yay -S lib32-mangohud-git
+```
+
+You can configure mangohud by editing the following config at this location
+
+`Home / .config / MangoHud / MangoHud.conf`
+
+<br>
+
+### Installing Protonup-qt
+This tool will let you get the latest GE versions of Proton for additional proton support
+```
+yay -S protonup-qt
+```
+
+
+<br>
+<br>
+<br>
+
+# Customising Desktop
+### Wallpaper
+<https://www.pexels.com/photo/mountain-peaks-during-night-time-3389618/> 
+
+<br>
+
+### Gnome Extensions
+
+First install the extension manager from Aur
+<br>
+
+```
+yay -S extension-manager
+```
+<br>
+Now install the following extensions through Extension Manager:
+<br>
+
+`Dash to Dock`
+
+`Blur My Shell`
+
+`Desktop Cube`
+
+`Coverflow Alt-Tab`
+
+`AppIndicator and KStatusNotifierItem Support`
+
+`gSnap`
+
+<br>
+<br>
+<br>
+
+# Linux Kernal Additional Information
+### Configure Zen Kernel as default 
 This CLI will open up the grub loader in Nano  
 
 ```
@@ -87,36 +170,15 @@ uname -r
 
 <br>
 <br>
-
-## Wallpapers
-<https://www.pexels.com/photo/mountain-peaks-during-night-time-3389618/> 
 <br>
 
-<br>
-<br>
-
-## Gnome Extensions
-Here's a list of the best extensions
-<br>
-<br>
-First install the extension manager from Aur
-<br>
-
+# Additional Optional Commands
+### Download Gnome Software GUI package manager  
+This CLI will install the Gnome Software App
 ```
-yay -S extension-manager
+sudo pacman -Syu gnome-software-packagekit-plugin gnome-software
 ```
 <br>
+<br>
+<br>
 
-Now install the following extensions:
-<br>
-Dash to Dock
-<br>
-Blur My Shell
-<br>
-Desktop Cube
-<br>
-Coverflow Alt-Tab
-<br>
-AppIndicator and KStatusNotifierItem Support
-<br>
-gSnap
