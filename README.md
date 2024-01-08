@@ -105,6 +105,80 @@ This tool will let you get the latest GE versions of Proton for additional proto
 yay -S protonup-qt
 ```
 
+<br>
+
+### Installing Gamemode
+<https://wiki.archlinux.org/title/Gamemode>
+
+First update your repositories
+```
+packman -Syy
+```
+These two cli's will install the gamemode libraries from Feral Interactive
+```
+packman -S lib32-gamemode
+```
+```
+packman -S gamemode
+```
+
+<br>
+
+### Enable Game Mode Scheduling
+Game Mode configures the CPU governer, scheduler, and process niceness for maximum performance for games. 
+
+<br>
+
+First enable the multilib repo if you haven't already. Edit `/etc/pacman.conf` to add
+
+```
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+
+Now you need to run the following cli in a terminal to create a new user group for gamemode
+
+```
+groupadd -r gamemode
+```
+
+Time to add yourself to the newly created gamemode group with the following
+
+```
+usermod -a yourUserName -G gamemode
+```
+
+If you are unsure of the user currently active you can type `who` into the terminal to see a list of users
+
+Edit system security limits for users nano /etc/security/limits.conf and add the following to the bottom. This will enable user accounts that are members of the gamemode group to increase (or 'renice') processes up to a value of 10.
+
+```
+@gamemode       -       nice    10
+```
+
+<br>
+
+Time to check if gamemode is setup correctly
+
+The following command will test gamemode's setup on your system
+
+```
+gamemoded -t
+```
+
+You can also launch a game with the gamemode command and check the status of gamemode through the terminal with the following cli, Although I recommend using the Gnome plugin `Gamemode Indicator` in the Gnome extensions to see a little pop-up appear in the system tray when gamemode is currently active.
+
+```
+gamemoded -s
+```
+
+To launch a game in steam with gamemode simply put the following command in the Steam games properties
+
+```
+gamemoderun %command%
+```
+
+
 
 <br>
 <br>
@@ -139,6 +213,8 @@ Now install the following extensions through Extension Manager:
 `AppIndicator and KStatusNotifierItem Support`
 
 `gSnap`
+
+`Gamemode Indicator`
 
 <br>
 <br>
